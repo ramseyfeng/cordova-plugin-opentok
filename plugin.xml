@@ -40,8 +40,6 @@
 
     <!-- ios -->
     <platform name="ios">
-      <!-- <hook type="before_plugin_install" src="scripts/downloadiOSSDK.js" /> -->
-      <framework src="OpenTok" type="podspec" spec="~> 2.17.0" />
       <asset src="www/opentok.js" target="opentok.js" />
 
       <header-file src="src/ios/UIView+Category.h" />
@@ -55,7 +53,7 @@
       <framework src="libsqlite3.dylib" />
       <framework src="libpthread.dylib" />
       <framework src="VideoToolbox.framework" />
-      <framework src="src/ios/OpenTok.framework" custom="true" />
+      <framework src="OpenTok" type="podspec" spec="~> 2.17.0" />
       <framework src="AudioToolbox.framework" />
       <framework src="CoreData.framework" />
       <framework src="AVFoundation.framework" />
